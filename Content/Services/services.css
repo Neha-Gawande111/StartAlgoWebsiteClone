@@ -1,0 +1,188 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#nav {
+    padding: 20px 10px;
+    background-color: #283341;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#nav ul li {
+    color: white;
+    list-style: none;
+}
+
+#nav button {
+    padding: 10px 30px;
+    background: #00a958;
+    color: white;
+    border: none;
+    border-radius: 30px;
+}
+
+
+
+
+.bgImage {
+    background-image: url(https://www.startalgo.com/webassets/img/breadcrumb.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+
+.head {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.head-green {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+    font-size: 40px;
+    letter-spacing: 1px;
+    line-height: 56px;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    color: #00a958;
+    text-decoration: underline;
+}
+
+.offer h1 {
+    text-align: center;
+    color: #13287e;
+    padding: 2%;
+    display: block;
+}
+
+.offerElement {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #d5f4fc;
+
+
+}
+
+.offerElement .api,
+.algo,
+.MQL,
+.IT {
+    padding: 10px;
+    margin: 10px;
+
+
+}
+
+.offer-btn {
+    cursor: pointer;
+    border-radius: 100px;
+    padding: 15px 25px;
+    line-height: 11px;
+    font-size: 13px;
+    font-weight: 600;
+    background-color: #00a958;
+    color: #fff;
+    letter-spacing: .4px;
+    border: 1px solid transparent;
+}
+
+/* .offer-btn:hover{background-color: #13287e;} */
+.api,
+.algo,
+.MQL,
+.IT {
+
+    background-color: #fff;
+    text-align: center;
+
+}
+
+.api:hover,
+.algo:hover,
+.MQL:hover,
+.IT:hover {
+    background-color: #00a958;
+}
+
+.offer-btn:hover {
+    background-color: #13287e;
+}
+
+.api img,
+.algo img,
+.MQL img,
+.IT img {
+    border-radius: 50%;
+    border: 10px solid rgb(221, 244, 250);
+}
+
+
+
+footer {
+    padding: 10px;
+    background-color: #16202B;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    padding: 10px;
+}
+@media screen and (min-width:300px) and (max-width:1100px) {
+    #nav ul{
+        display: none;
+    }
+    
+    #nav img {
+        height: 60px;
+        width: 140px;
+    }
+    footer .address img {
+        height: 50px;
+    }
+    
+}
+
+@media(max-width:750px) {
+    .offerElement {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: #d5f4fc;
+        place-items: center;
+
+    }
+
+}
+
+@media(max-width:590px) {
+    .offerElement {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: #d5f4fc;
+        place-items: center;
+
+    }
+
+}

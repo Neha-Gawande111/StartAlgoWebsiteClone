@@ -1,0 +1,201 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#nav {
+    padding: 20px 10px;
+    background-color: #283341;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#nav ul li {
+    color: white;
+    list-style: none;
+}
+
+#nav button {
+    padding: 10px 30px;
+    background: #00a958;
+    color: white;
+    border: none;
+    border-radius: 30px;
+}
+
+
+
+.bgImage{
+    background-image: url(https://www.startalgo.com/webassets/img/breadcrumb.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+
+.head{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    
+}
+.head-green{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+    font-size: 40px;
+    letter-spacing: 1px;
+    line-height: 56px;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    color: #00a958;
+    text-decoration: underline;
+}
+
+#mainContainer{
+    text-align: center;
+    
+}
+#mainContainer .button button{
+    border: 1px solid green;
+    border-radius: 25px;
+    padding: 10px 100px;
+    color: #00a958;
+    margin: 5px -50px;
+}
+#mainContainer .button button:hover{
+    background-image: linear-gradient(to left top, rgb(0, 28, 107) 0%, rgb(46, 169, 135) 100%);
+    color: white;
+}
+.section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    justify-content:space-between;
+} 
+.monthly, .quarterly, .half-yearly{
+    
+    color: white;
+    background-image: linear-gradient(to left top, rgb(0, 28, 107) 0%, rgb(46, 169, 135) 100%);   
+    border-radius: 5%;
+    margin: 5%;
+    padding: 10%;
+}
+p{
+    line-height: 200%;
+}
+.note p{
+    color: #00a958;
+    text-transform: capitalize;
+    
+    font-weight: 550;
+    font-size: x-large;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+
+}
+.buttons button
+{
+    background-color: #fff;
+    color: black;
+    padding: 5px 20px;
+    border-radius: 25px;
+    border: none;
+   
+}
+.buttons button:hover{
+    background-image: linear-gradient(to left top, rgb(0, 28, 107) 0%, rgb(46, 169, 135) 100%);   
+    color: white;
+
+}
+
+button{
+    font-size: larger;
+    font-weight: 700;
+    color: #001C6B;
+    padding: 3% 5%;
+    border-radius: 25px;
+    border: none;
+}
+footer {
+    padding: 10px;
+    background-color: #16202B;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    padding: 10px;
+}
+
+@media screen and (min-width:770px) and (max-width:1250px){
+    #nav ul{
+        display: none;
+    }
+
+}
+@media screen and (min-width:481px) and (max-width:771px){
+    #nav ul{
+        display: none;
+    }
+    #nav img {
+        height: 60px;
+        width: 140px;
+    }
+}
+@media screen and (min-width:320px) and (max-width:480px){
+    #nav ul{
+        display: none;
+    }
+    #nav img {
+        height: 60px;
+        width: 140px;
+    }
+    #mainContainer{
+        text-align: center;
+        
+    }
+    .section{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        justify-content:space-between;
+    } 
+    
+    footer .address img {
+        height: 50px;
+    }
+
+
+}
+@media screen and (min-width:481px) and (max-width:769px){
+    #mainContainer{
+        text-align: center;
+        
+    }
+    .section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        justify-content:space-between;
+    } 
+
+}

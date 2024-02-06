@@ -1,0 +1,227 @@
+#nav {
+    padding: 20px 10px;
+    background-color: #283341;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#nav ul li {
+    color: white;
+    list-style: none;
+}
+
+#nav button {
+    padding: 10px 30px;
+    background: #00a958;
+    color: white;
+    border: none;
+    border-radius: 30px;
+}
+
+
+
+
+
+.success_story {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.bgImage {
+    background-image: url(https://www.startalgo.com/webassets/img/breadcrumb.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+
+.head {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+
+}
+
+.head-green {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+    font-size: 40px;
+    letter-spacing: 1px;
+    line-height: 56px;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    color: #00a958;
+    text-decoration: underline;
+}
+
+.centerDiv {
+    display: flex;
+    flex-wrap: wrap;
+    /*  */
+}
+
+.video {
+
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+
+}
+
+h1 {
+    color: #13287e;
+    font-weight: 700;
+    font-family: Merriweather;
+    text-align: start;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 1px;
+    line-height: 56px;
+}
+
+h4 {
+    color: #00a958;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .8px;
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+    line-height: 13px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 26px;
+    margin-bottom: 15px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #282f41;
+}
+
+.items {
+    align-items: center;
+    display: flex;
+    background-color: #e2eeed;
+    padding: 2%;
+}
+
+.Div1 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding: 0 15px;
+    color: #282f41;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.head1 {
+    color: #001c6b;
+    font-size: 32px;
+    font-family: 'Merriweather', serif;
+    line-height: 26px;
+    display: inline-block;
+    position: relative;
+    font-weight: 700;
+}
+
+.head1::after {
+    background: #00a958;
+    position: absolute;
+    content: close-quote;
+    width: 100px;
+    height: 1px;
+    top: 50%;
+    margin-left: 15px;
+
+}
+
+.image img {
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    padding: 10px;
+    background-color: #16202B;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    padding: 10px;
+}
+
+@media (min-width:300px) and (max-width:770px) {
+    #nav ul {
+        display: none;
+    }
+
+    #nav img {
+        height: 60px;
+        width: 140px;
+    }
+
+    .success_story {
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+
+    .success_content,
+    h1,
+    p {
+        text-align: center;
+    }
+
+    .success_video iframe {
+        height: 230px;
+        width: 270px;
+    }
+
+    .items {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        background-color: #e2eeed;
+
+    }
+
+    footer .address img {
+        height: 50px;
+    }
+
+}
